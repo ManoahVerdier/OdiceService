@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 41" width="40" height="41">
+	<title>ball-blue-svg</title>
+	<defs>
+		<radialGradient id="g1" cx="5.8" cy="7" r="19.9" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset=".4" stop-color="#ffffff" stop-opacity="0"/>
+		</radialGradient>
+		<image  width="40" height="41" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAApCAMAAABwfJv6AAAAAXNSR0IB2cksfwAAAnZQTFRFQkE/SEdFUlFPWFdVU1JQb25shoWDmJeVoJ+dn56cnp2bnZyanJuZm5qYkpGPgH99a2poUlFPaGdljYyKoqGfoaCemZiWmJeVl5aUlpWTgoF/YmFfZGNhl5aUpqWjpKOimpmXlZSSlJORk5KQkpGPhIOBXFtZRENBhoWDq6qoqainp6ako6KgkZCOkI+Nj46McXBuQ0JAUlFPm5qZrq2srKuqqaimjo2LjYyKjIuJfXx6TUxKWFdVqKemsbCvrq6sqKelo6Ohi4qIiomHiYiGgYB+T05MUE9Np6eltLOyrayriIeFh4aEhoWDfn17SklHmJeWsrGvsbCur66spKOhhYSChIOBdHNxgH99rq2rq6qpoJ+eg4KAgoF/gYB+ZWRiXFtZq6upqqmnp6alpKSinZybgH99f358fn17UVBOjYyKpaWjoKCefXx6fHt5bGtpW1pYpaSinJyamZiXe3p4enl3eXh2UE9NgH99eHd1d3Z0dnVzZGNhnZyadXRydHNxc3JwXVxac3JwcnFvcXBuUE9NcnFvcG9tb25sWllXgoF/bm1rbWxqbGtpa2poYWBejo2LamlnaWhmZWRilZSSaGdlZ2ZkZmVjZmVjmZiWZWRiZGNhZWRil5aUY2Jgjo2LYGBeg4KAXVxadXRyV1ZUY2JgUE9NT05MR0ZEgYB+Xl1bZWRiUVBORkVDiIeFY2FgRENBZWRiU1JQfHt5Xl1bVFNRS0pIX15cUVBOY2JgVFNRYWBeVFJQWllXTUxKaWhmXFtZSUhGVVRSaWhmX15cT05MUE9NXVxaZ2ZkYmFfWFdVTUxKSklHUE9NVVRSWVhWW1pYSUhGOBMyswAAANJ0Uk5TABArOy53tef////////ntXcuYcb////////GYVLT/////////9NSBJz/////////nAQly////////8slLuL/////////4i4f4v//////4h/B////////wYz///////+MPf//////////Pbn/////uUH///////9Bov///6L3///3Sf///0mD//+Ds/////+z1v//1u/////v/f///fr65OTGxp2daGgoKM7OcnIN8/MNfHzT00JCcXGGhoODaDLAwDJi1dViUKfy8qdQOGmPqrw4lsuSPAAAAw5JREFUeJx11PdfUlEYBvCjNkAuTUFvQ1kNVCDLFJqGNIWWQgtsOhraUksoKLG0BApKLGkP23vvvXP0H/Wew70geHl/hO/ned5z4F6E4icpOSUlOWnAx7EzaPCQoTx+qoASDhs+YmRCNmp0mojPF1CUUJyenkHTY8ZysnHjM7NEwIQSMSipTCaXKyZMHMAmTVZm5+TygDFKoVKr1RrNlLxYN3Va/vSCzLRUiRgzrDSaQq1Wp9PNmNnfzZo9Z66yaB6PEmMGqhAbfXGxwWCYvyDqFi5aPGdJNg6kWaYHU1JiNBpNpqXLInD5ipWlypwyHpUuVQDT6bAymsxmC5lVrFtdmr9mbVHWOoGYVqkJw8pisdps5WTWh92GjUrlps1bRBUSWqHREgYKm8qqqmoyWwncVlCUsz13R4WQlmt0esKsNkDVNTU1teHZid2uzN1luSL+nr3YQZzJYoUsULV19Q3s7AO4P03E4wuE6VJ5ITiIs2FGVKPd7iBjP4BQ3kF+KgX3LFOAI3GYgQLjdLqYOZSHDvMp+NXgWrQ6XGsrr4I0yHI4XU1udzMz7iPoKLTSMoU6nEccTnM2AWppjcwxdJyCWjnroBbiCGtpbWvzeL0+n8/r9XpOoJOSDKlcpWEdbGd3uAgD4/cHyPj9p9BpUqzVG4zQS5yzKcz8gfZgsINMMHgGnYVAKIZ7scJ+9Q0O7No8wAB1hpjpPIfO0zJSbLaAqyN5EIdZROG5gC5CINwMFFdGnM/fHstCoUvoMhNohQXhvMQF2jtCcXMFXSUbmizhBV2wnw9q413oGrquiAbane4W2I/DhbrQDRU+MgkkxV7/wF6Ymwjd0ur7B/oCXO42/M3u4GZ8ZCYw2MkB7wK8d580s4GcxQ8e4r/4I4OJNMOREwU+Dj9dT8xWpjnBhk+Zx/UZXrG+EZo93Ed+zj7YL8IrNrd6OJtfRt8pr9gVuZpf939LvUkM38a+9941JDhLV/yb9P0HLvjxU7yD+fwlHn79xsHwfP/xMwp//f6TgJH5293T29fX29P9L+6L//KxMUxJXza/AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		.s0 { opacity: .2;fill: url(#g1) } 
+	</style>
+	<path id="Layer" class="s0" d="m20 40.8c-11.1 0-20-9-20-20 0-11.1 8.9-20 20-20 11.1 0 20 8.9 20 20 0 11-8.9 20-20 20z"/>
+	<use id="Layer 1" href="#img1" x="0" y="0"/>
+</svg>
