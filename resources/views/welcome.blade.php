@@ -58,7 +58,7 @@
             <div class="main__wrap">
               <h1 data-aos="fade-right" data-aos-duration="200" class="main__title hero">Odice <br>Service +</h1>
               <div data-aos="fade-right" data-aos-duration="500" class="main__info h4M">L'abonnement pour entretenir et réparer vos équipements en illimité.</div>
-              <div data-aos="fade-right" data-aos-duration="800" class="main__btns"><a class="button main__button" href="index.html" target="#details">Je m'abonne</a><a class="button-gray main__button" href="#univers"> En savoir plus</a></div>
+              <div data-aos="fade-right" data-aos-duration="800" class="main__btns"><a class="button main__button" href="#details">Je m'abonne</a><a class="button-gray main__button" href="#univers"> En savoir plus</a></div>
             </div>
             <div class="main__preview"><img data-aos="zoom-in" data-aos-duration="1000" src="{{ Vite::asset('resources/img/mainpng.png')}}" alt="">
               <div class="main__circle"></div>
