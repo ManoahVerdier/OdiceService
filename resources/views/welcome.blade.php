@@ -256,7 +256,7 @@
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
                       
-                    </div><a class="button-gray pricing__button js-popup-open" href="#subscribe" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
+                    </div><a class="button-gray pricing__button js-popup-open" href="#subscribe">Je m'abonne</a>
                   </div>
                 </div>
                 <div class="univers2 pricing__plan">
@@ -276,7 +276,7 @@
                         </svg>
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
-                    </div><a class="button-gray pricing__button js-popup-open" href="#subscribe" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
+                    </div><a class="button-gray pricing__button js-popup-open" href="#subscribe">Je m'abonne</a>
                   </div>
                 </div>
                 <div class="univers3 pricing__plan pricing__plan_premium">
@@ -297,7 +297,7 @@
                         </svg>
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
-                    </div><a class="button pricing__button js-popup-open" href="#subscribe" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
+                    </div><a class="button pricing__button js-popup-open" href="#subscribe">Je m'abonne</a>
                   </div>
                 </div>
               </div>
