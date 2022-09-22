@@ -58,7 +58,7 @@
             <div class="main__wrap">
               <h1 data-aos="fade-right" data-aos-duration="200" class="main__title hero">Odice <br>Service +</h1>
               <div data-aos="fade-right" data-aos-duration="500" class="main__info h4M">L'abonnement pour entretenir et réparer vos équipements en illimité.</div>
-              <div data-aos="fade-right" data-aos-duration="800" class="main__btns"><a class="button main__button" href="index.html" target="_blank">Je m'abonne</a><a class="button-gray main__button" href="about-us.html"> En savoir plus</a></div>
+              <div data-aos="fade-right" data-aos-duration="800" class="main__btns"><a class="button main__button" href="index.html" target="#details">Je m'abonne</a><a class="button-gray main__button" href="#univers"> En savoir plus</a></div>
             </div>
             <div class="main__preview"><img data-aos="zoom-in" data-aos-duration="1000" src="{{ Vite::asset('resources/img/mainpng.png')}}" alt="">
               <div class="main__circle"></div>
@@ -72,7 +72,7 @@
           </div>
         </div>
         <!-- website-->
-        <div class="section-border generation">
+        <div class="section-border generation" id="univers">
           <div class="generation__container container ">
             <div class="w-100 d-inline-block">
               <h2 class="website__title h2">3 univers au choix</h2>
@@ -103,7 +103,7 @@
             </div>
           </div>
         </div>
-        <div class="section discover">
+        <div class="section discover" id="discover">
           <div class="discover__container container">
             <h2 class="discover__title h2">Un abonnement Odice Service +, tout compris !</h2>
             <div class="discover__group">
@@ -164,7 +164,7 @@
         </div>
 
         <!-- details-->
-        <div class="section details">
+        <div class="section details" id="details">
           <div class="details__container container">
             <h2 class="details__title h2">Construisez votre univers</h2>
             <!-- tabs-->
@@ -229,7 +229,7 @@
         </div>
 
         <!-- pricing-->
-        <div class="section pricing">
+        <div class="section pricing" id="pricing">
           <div class="pricing__inner">
             <div class="pricing__container container">
               <div class="pricing__top">
@@ -256,7 +256,7 @@
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
                       
-                    </div><a class="button-gray pricing__button js-popup-open" href="#popup-login" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
+                    </div><a class="button-gray pricing__button js-popup-open" href="#subscribe" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
                   </div>
                 </div>
                 <div class="univers2 pricing__plan">
@@ -276,7 +276,7 @@
                         </svg>
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
-                    </div><a class="button-gray pricing__button js-popup-open" href="#popup-login" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
+                    </div><a class="button-gray pricing__button js-popup-open" href="#subscribe" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
                   </div>
                 </div>
                 <div class="univers3 pricing__plan pricing__plan_premium">
@@ -297,7 +297,7 @@
                         </svg>
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
-                    </div><a class="button pricing__button js-popup-open" href="#popup-login" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
+                    </div><a class="button pricing__button js-popup-open" href="#subscribe" data-type="inline" data-effect="mfp-sidebar">Je m'abonne</a>
                   </div>
                 </div>
               </div>
@@ -314,7 +314,7 @@
           </div>
         </div>
         <!-- subscription-->
-        <div class="section subscription">
+        <div class="section subscription" id="subscribe">
           <div class="subscription__container container">
             <div class="subscription__wrapper">
               <div class="subscription__head">
