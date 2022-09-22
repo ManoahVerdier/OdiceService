@@ -1,7 +1,7 @@
 
 
 import.meta.glob([
-  '../images/**',
+  '../img/**',
   '../fonts/**',
 ]);
 "use strict";
