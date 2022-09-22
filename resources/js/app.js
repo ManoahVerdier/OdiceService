@@ -1,10 +1,10 @@
-"use strict";
+
 
 import.meta.glob([
   '../images/**',
   '../fonts/**',
 ]);
-
+"use strict";
 import jQuery from 'jquery';
 window.$ = jQuery;
 
