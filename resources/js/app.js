@@ -7,7 +7,7 @@ import.meta.glob([
 "use strict";
 import './lib/jquery.min.js';
 window.$ = jQuery;
-import './lib/jquery.nice-select.min.js';
+//import './lib/jquery.nice-select.min.js';
 
 import 'bootstrap';
 import 'magnific-popup';
