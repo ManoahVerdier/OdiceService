@@ -5,9 +5,9 @@ import.meta.glob([
   '../fonts/**',
 ]);
 "use strict";
-import '@/js/lib/jquery.min.js';
+import '@/lib/jquery.min.js';
 window.$ = jQuery;
-import '@/js/lib/jquery.nice-select.min.js';
+import '@/lib/jquery.nice-select.min.js';
 
 import 'bootstrap';
 import 'magnific-popup';
