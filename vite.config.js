@@ -3,21 +3,20 @@ import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
     plugins: [
+
         laravel({
             input: [
                 'resources/sass/app.scss',
                 'resources/css/app.min.css',
-                'resources/js/app.js',
-                'resources/js/lib/jquery.nice-select.min.js',
-                'resources/js/lib/jquery.min.js',
+                'resources/js/app.js'
             ],
             refresh: true,
         }),
     ],
-    resolve: {
+    /*resolve: {
         alias: {
             '$': 'jQuery',
         },
-    },
+    },*/
     
 });

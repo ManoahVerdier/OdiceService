@@ -30,6 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
       var viewportmeta = document.querySelector('meta[name="viewport"]');
       if (viewportmeta) {
@@ -45,9 +46,7 @@
     @vite([
       'resources/css/app.min.css',
       'resources/sass/app.scss', 
-      'resources/js/app.js',
-      'resources/js/lib/jquery.min.js',
-      'resources/js/lib/jquery.nice-select.min.js'
+      'resources/js/app.js'
     ])
   </head>
   <body>
@@ -385,13 +384,13 @@
               </div>
             </div>
             <div class="pricing__background">
-              <div class="pricing__image"><img class="js-parallax" data-scale="2.1" data-orientation="down" src="img/join/image-3.png" alt=""></div>
-              <div class="pricing__image"><img class="js-parallax" data-scale="2.6" data-orientation="down" src="img/join/image-4.png" alt=""></div>
+              <div class="pricing__image"><img class="js-parallax" data-scale="2.1" data-orientation="down" src="{{ Vite::asset('resources/img/join/image-3.png')}}" alt=""></div>
+              <div class="pricing__image"><img class="js-parallax" data-scale="2.6" data-orientation="down" src="{{ Vite::asset('resources/img/join/image-4.png')}}" alt=""></div>
             </div>
             <div class="pricing__balls">
-              <div class="pricing__ball"><img class="js-parallax" data-scale="3.3" data-orientation="down" src="img/ball-green.svg" alt=""></div>
-              <div class="pricing__ball"><img class="js-parallax" data-scale="2.8" data-orientation="down" src="img/ball-yellow.svg" alt=""></div>
-              <div class="pricing__ball"><img class="js-parallax" data-scale="4.4" data-orientation="down" src="img/ball-blue.svg" alt=""></div>
+              <div class="pricing__ball"><img class="js-parallax" data-scale="3.3" data-orientation="down" src="{{ Vite::asset('resources/img/ball-blue-pf-svg.svg')}}" alt=""></div>
+              <div class="pricing__ball"><img class="js-parallax" data-scale="2.8" data-orientation="down" src="{{ Vite::asset('resources/img/ball-grey-svg.svg')}}" alt=""></div>
+              <div class="pricing__ball"><img class="js-parallax" data-scale="4.4" data-orientation="down" src="{{ Vite::asset('resources/img/ball-red-pf-svg.svg')}}" alt=""></div>
             </div>
           </div>
         </div>
@@ -442,10 +441,10 @@
               </form>
               <div class="subscription__circles"></div>
               <div class="subscription__balls">
-                <div class="subscription__ball" data-aos="fadeIn"><img class="js-parallax" data-scale="2.1" data-orientation="down" src="img/ball-gray.svg" alt=""></div>
-                <div class="subscription__ball" data-aos="fadeIn"><img class="js-parallax" data-scale="2.3" data-orientation="down" src="img/ball-blue.svg" alt=""></div>
-                <div class="subscription__ball" data-aos="fadeIn"><img class="js-parallax" data-scale="2.3" data-orientation="down" src="img/ball-green.svg" alt=""></div>
-                <div class="subscription__ball" data-aos="fadeIn"><img class="js-parallax" data-scale="2.3" data-orientation="down" src="img/ball-yellow.svg" alt=""></div>
+                <div class="subscription__ball" data-aos="fadeIn"><img class="js-parallax" data-scale="2.1" data-orientation="down" src="{{ Vite::asset('resources/img/ball-blue-pf-svg.svg')}}" alt=""></div>
+                <div class="subscription__ball" data-aos="fadeIn"><img class="js-parallax" data-scale="2.3" data-orientation="down" src="{{ Vite::asset('resources/img/ball-red-pf-svg.svg')}}" alt=""></div>
+                <div class="subscription__ball" data-aos="fadeIn"><img class="js-parallax" data-scale="2.3" data-orientation="down" src="{{ Vite::asset('resources/img/ball-grey-svg.svg')}}" alt=""></div>
+                <div class="subscription__ball" data-aos="fadeIn"><img class="js-parallax" data-scale="2.3" data-orientation="down" src="{{ Vite::asset('resources/img/ball-blue-dark-pf-svg.svg')}}" alt=""></div>
               </div>
             </div>
           </div>

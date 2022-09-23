@@ -1,20 +1,21 @@
 
-
 import.meta.glob([
   '../img/**',
   '../fonts/**',
 ]);
 "use strict";
-import '@/lib/jquery.min.js';
-window.$ = jQuery;
-import '@/lib/jquery.nice-select.min.js';
+
+import 'jquery-nice-select';  
+import 'bootstrap';
+
+  
+
+
 
 import 'bootstrap';
 import 'magnific-popup';
 import AOS from 'aos';
 import simpleParallax from  'simple-parallax-js';
-
-
 
 
 
