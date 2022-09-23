@@ -42,7 +42,13 @@
       }
     </script>
     <link rel="stylesheet" href="https://www.odice.info/wp-content/cache/min/1/wp-content/themes/theme-wordpress/css/front.min.css?ver=1659614130">
-    @vite(['resources/css/app.min.css','resources/sass/app.scss', 'resources/js/app.js'])
+    @vite([
+      'resources/css/app.min.css',
+      'resources/sass/app.scss', 
+      'resources/js/app.js'
+      'resources/js/lib/jquery.min.js'
+      'resources/js/lib/jquery.nice-select.min.js'
+    ])
   </head>
   <body>
     <!-- page-->
