@@ -234,8 +234,8 @@ $('.nbApp').on('change', function () {
     $('#prix').val(prix3.toFixed(2));
   }
 
-  $('.button-gray.pricing__button').addClass("disabled").prop("disabled", true);
-  $('.button.pricing__button').removeClass("disabled").prop("disabled", false);
+  $('.button-gray.pricing__button').addClass("disabled").prop("disabled", true).prop("href","#");
+  $('.button.pricing__button').removeClass("disabled").prop("disabled", false).prop("href","#subscribePart");
   if (nbApp > 1 && !$('.pricing__plans').hasClass('changed_once')) {
     $('.pricing__plans').addClass('changed_once')
   } else if(nbApp<=1){

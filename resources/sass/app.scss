@@ -12,29 +12,44 @@ header nav a,header nav span{
     font-size:16px !important;
 }
 
-.main__ball:nth-child(1) {
-    top: 14%;
-    left: -2.5%;
-    width: 4.1%;
-}
+.main__preview{
+    text-align:center;
+    top:40%;
+    @media(min-width:767px){
+        img.mainImg{
+            max-width:60%;
+        }
+    }
 
-.main__ball:nth-child(2) {
-    left: 37%;
-    bottom: -5.6%;
-    width: 2.6%;
-}
+    .main__ball:nth-child(1) {
+        top: 14%;
+        left: 17%;
+        width: 4.1%;
+    }
+    
+    .main__ball:nth-child(2) {
+        left: 37%;
+        bottom: -7.6%;
+        width: 2.6%;
+    }
+    
+    .main__ball:nth-child(3) {
+        top: -7.5%;
+        right: 21.3%;
+        width: 6.5%;
+    }
+    
+    .main__ball:nth-child(4) {
+        right: 17.3%;
+        bottom: 22%;
+        width: 4.3%;
+    }
 
-.main__ball:nth-child(3) {
-    top: -5.5%;
-    right: 21.3%;
-    width: 6.5%;
 }
+    
 
-.main__ball:nth-child(4) {
-    right: -2.3%;
-    bottom: 22%;
-    width: 4.3%;
-}
+
+
 
 .main__button{
     text-decoration:none;
@@ -135,6 +150,30 @@ header nav a,header nav span{
 .table,.table tr, .table tr td{
 border:0px !important;
 }
+
+.details__row{
+    max-height:441px;
+    overflow-y:scroll;
+    align-items:start !important;
+    }
+    
+.details__row .table{
+    margin-bottom:0px;
+}
+
+.table tr td:last-child{
+    text-align:right;
+}
+
+.nbApp{
+    
+    max-width:80px;
+    margin-right:0px;
+    width:auto;
+    display: inline-block !important;
+}
+    
+    
 
 .form-control {
     display: block;
