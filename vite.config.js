@@ -8,6 +8,8 @@ export default defineConfig({
                 'resources/sass/app.scss',
                 'resources/css/app.min.css',
                 'resources/js/app.js',
+                'resources/js/lib/jquery.nice-select.min.js',
+                'resources/js/lib/jquery.min.js',
             ],
             refresh: true,
         }),
