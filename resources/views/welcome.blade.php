@@ -45,8 +45,8 @@
     @vite([
       'resources/css/app.min.css',
       'resources/sass/app.scss', 
-      'resources/js/app.js'
-      'resources/js/lib/jquery.min.js'
+      'resources/js/app.js',
+      'resources/js/lib/jquery.min.js',
       'resources/js/lib/jquery.nice-select.min.js'
     ])
   </head>
