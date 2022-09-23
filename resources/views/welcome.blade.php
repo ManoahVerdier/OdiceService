@@ -183,43 +183,118 @@
                 <div class="tabs__item js-tabs-item">
                   <div class="details__row">
                     <table class="table table-striped table-borderless table-hover">
-                      <tr><td>Simple service gaz</td><td><input class="form-control nbApp chaud" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>4 feux vifs sur neutre</td><td><input class="form-control nbApp chaud" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>2 feux vifs sur neutre</td><td><input class="form-control nbApp chaud" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Plaque coup de feu sur four gaz</td><td><input class="form-control nbApp chaud" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Plaque coup de feu gaz sur neutre</td><td><input class="form-control nbApp chaud" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>grillade snack simple gaz</td><td><input class="form-control nbApp chaud" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>grillade snack double gaz</td><td><input class="form-control nbApp chaud" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>friteuse gaz 1 bac</td><td><input class="form-control nbApp chaud" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
+                      <tr>
+                        <td>Simple service gaz</td>
+                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][0]" type="number" min=0 step=1 value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>4 feux vifs sur neutre</td>
+                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][1]" type="number" min=0 step=1 value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>2 feux vifs sur neutre</td>
+                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][2]" type="number" min=0 step=1 value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Plaque coup de feu sur four gaz</td>
+                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][3]" type="number" min=0 step=1 value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Plaque coup de feu gaz sur neutre</td>
+                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][4]" type="number" min=0 step=1 value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>grillade snack simple gaz</td>
+                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][5]" type="number" min=0 step=1 value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>grillade snack double gaz</td>
+                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][6]" type="number" min=0 step=1 value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>friteuse gaz 1 bac</td>
+                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][7]" type="number" min=0 step=1 value="0"/></td>
+                      </tr>
                     </table>
                   </div>
                 </div>
                 <div class="tabs__item js-tabs-item">
                   <div class="details__row">
                     <table class="table table-striped table-borderless table-hover">
-                      <tr><td>Armoire froide 1 ou 2  portes</td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Armoire à chariots</td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Cellule à grilles</td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Cellule à chariots</td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Chambre froide positive</td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Chambre froide négative</td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Meuble bas, tours, meubles self </td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Vitrine de self</td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Gondole self service</td><td><input class="form-control nbApp froid" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
+                      <tr>
+                        <td>Armoire froide 1 ou 2  portes</td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][0]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Armoire à chariots</td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][1]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Cellule à grilles</td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][2]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Cellule à chariots</td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][3]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Chambre froide positive</td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][4]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Chambre froide négative</td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][5]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Meuble bas, tours, meubles self </td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][6]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Vitrine de self</td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][7]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Gondole self service</td>
+                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][8]" value="0"/></td>
+                      </tr>
                     </table>
                   </div>
                 </div>
                 <div class="tabs__item js-tabs-item">
                   <div class="details__row">
                     <table class="table table-striped table-borderless table-hover">
-                      <tr><td>Cutter/ Blender</td><td><input class="form-control nbApp autre" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Armoire à couteux</td><td><input class="form-control nbApp autre" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>désinsectiseur</td><td><input class="form-control nbApp autre" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Laminoir</td><td><input class="form-control nbApp autre" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Ouvre boites</td><td><input class="form-control nbApp autre" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Bermixer / kitchened</td><td><input class="form-control nbApp autre" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Girafe broyeur</td><td><input class="form-control nbApp autre" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
-                      <tr><td>Coupe legumes</td><td><input class="form-control nbApp autre" type="number" min=0 step=1 name="nb" value="0"/></td></tr>
+                      <tr>
+                        <td>Cutter/ Blender</td>
+                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][0]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Armoire à couteux</td>
+                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][1]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>désinsectiseur</td>
+                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][2]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Laminoir</td>
+                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][3]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Ouvre boites</td>
+                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][4]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Bermixer / kitchened</td>
+                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][5]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Girafe broyeur</td>
+                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][6]" value="0"/></td>
+                      </tr>
+                      <tr>
+                        <td>Coupe legumes</td>
+                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][7]" value="0"/></td>
+                      </tr>
                     </table>
                   </div>
                 </div>
@@ -256,7 +331,7 @@
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
                       
-                    </div><a class="button-gray pricing__button js-popup-open" href="#subscribe">Je m'abonne</a>
+                    </div><a class="button-gray pricing__button" href="#subscribePart">Je m'abonne</a>
                   </div>
                 </div>
                 <div class="univers2 pricing__plan">
@@ -276,7 +351,7 @@
                         </svg>
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
-                    </div><a class="button-gray pricing__button js-popup-open" href="#subscribe">Je m'abonne</a>
+                    </div><a class="button-gray pricing__button" href="#subscribePart">Je m'abonne</a>
                   </div>
                 </div>
                 <div class="univers3 pricing__plan pricing__plan_premium">
@@ -297,7 +372,7 @@
                         </svg>
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
-                    </div><a class="button pricing__button js-popup-open" href="#subscribe">Je m'abonne</a>
+                    </div><a class="button pricing__button" href="#subscribePart">Je m'abonne</a>
                   </div>
                 </div>
               </div>
@@ -314,14 +389,22 @@
           </div>
         </div>
         <!-- subscription-->
-        <div class="section subscription" id="subscribe">
+        <div class="section subscription" id="subscribePart">
           <div class="subscription__container container">
             <div class="subscription__wrapper">
               <div class="subscription__head">
                 <div class="subscription__title h1">Je m'abonne à Odice Service +</div>
                 <div class="subscription__info h4M">Pour profiter des avantages, riend de plus simple, vous remplissez ce formulaire et on revient vers vous</div>
               </div>
-              <form class="subscription__form">
+              <form class="subscription__form" id="sendAdhesion" method="POST">
+                @csrf
+                <input type="hidden" name="nbAppTot" value="" id="nbAppTot">
+                <input type="hidden" name="nbChaud" value="" id="nbChaud">
+                <input type="hidden" name="nbFroid" value="" id="nbFroid">
+                <input type="hidden" name="nbAutres" value="" id="nbAutres">
+                <input type="hidden" name="nbUnivers" value="" id="nbUnivers">
+                <input type="hidden" name="formule" value="" id="formule">
+                <input type="hidden" name="prix" value="" id="prix">
                 <div class="subscription__fieldset">
                   <div class="field field_icon field_light">
                     <div class="field__wrap">
@@ -333,7 +416,7 @@
                   </div>
                   <div class="field field_icon field_light">
                     <div class="field__wrap">
-                      <input class="field__input" type="phone" name="name" placeholder="Votre téléphone" required>
+                      <input class="field__input" type="phone" name="phone" placeholder="Votre téléphone" required>
                       <svg class="icon icon-profile">
                         <use xlink:href="#icon-chat"></use>
                       </svg>

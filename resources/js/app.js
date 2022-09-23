@@ -5,15 +5,15 @@ import.meta.glob([
   '../fonts/**',
 ]);
 "use strict";
-import jQuery from 'jquery';
+import './lib/jquery.min.js';
 window.$ = jQuery;
+import './lib/jquery.nice-select.min.js';
 
-$('.test').text('test');
 import 'bootstrap';
 import 'magnific-popup';
 import AOS from 'aos';
 import simpleParallax from  'simple-parallax-js';
-//import 'jquery-nice-select';
+
 
 
 
@@ -106,10 +106,10 @@ $(document).on('click', '.mfp-close', function (e) {
   $.magnificPopup.close();
 }); // nice select
 
-/*$(document).ready(function () {
+$(document).ready(function () {
   $('.select').niceSelect();
 }); // tabs
-*/
+
 (function () {
   let tabs = $('.js-tabs');
   tabs.each(function () {
@@ -186,7 +186,7 @@ $('.nbApp').on('change', function () {
 
   $('.pricing__line .pricing__recommended').remove();
 
-  $('.button.pricing__button').removeClass("button pricing__button js-popup-open").addClass("button-gray pricing__button js-popup-open");
+  $('.button.pricing__button').removeClass("button pricing__button").addClass("button-gray pricing__button");
   let prix1 = 79.99 * nbApp;
   let prix2 = 89.99 * nbApp;
   let prix3 = 99.99 * nbApp;
@@ -198,7 +198,9 @@ $('.nbApp').on('change', function () {
     $('.univers1 .amount').text(prix1.toFixed(2) + "€");
     $('.univers2 .amount').text(prix2.toFixed(2) + "€");
 
-    $('.univers3 .pricing__button').removeClass("button-gray pricing__button js-popup-open").addClass("button pricing__button js-popup-open");
+    $('.univers3 .pricing__button').removeClass("button-gray pricing__button").addClass("button pricing__button");
+
+    $('#prix').val(prix3.toFixed(2));
   } else if (nbUnivers == 1) {
     $('.univers1').addClass("pricing__plan_premium").removeClass("disabled");
     $('.univers1 .pricing__line').append('<div class="pricing__recommended">Recommandé</div>');
@@ -207,7 +209,8 @@ $('.nbApp').on('change', function () {
     $('.univers2 .amount').text(prix2.toFixed(2) + "€");
     $('.univers3 .amount').text(prix3.toFixed(2) + "€");
 
-    $('.univers1 .pricing__button').removeClass("button-gray pricing__button js-popup-open").addClass("button pricing__button js-popup-open");
+    $('.univers1 .pricing__button').removeClass("button-gray pricing__button").addClass("button pricing__button");
+    $('#prix').val(prix1.toFixed(2));
   } else if (nbUnivers == 2) {
     $('.univers2').addClass("pricing__plan_premium").removeClass("disabled");
     $('.univers2 .pricing__line').append('<div class="pricing__recommended">Recommandé</div>');
@@ -216,7 +219,9 @@ $('.nbApp').on('change', function () {
     $('.univers1 .amount').text(prix1.toFixed(2) + "€");
     $('.univers3 .amount').text(prix3.toFixed(2) + "€");
     
-    $('.univers2 .pricing__button').removeClass("button-gray pricing__button js-popup-open").addClass("button pricing__button js-popup-open");
+    $('.univers2 .pricing__button').removeClass("button-gray pricing__button").addClass("button pricing__button");
+
+    $('#prix').val(prix2.toFixed(2));
   } else if (nbUnivers == 3) {
     $('.univers3').addClass("pricing__plan_premium").removeClass("disabled");
     $('.univers3 .pricing__line').append('<div class="pricing__recommended">Recommandé</div>');
@@ -225,22 +230,43 @@ $('.nbApp').on('change', function () {
     $('.univers1 .amount').text(prix1.toFixed(2) + "€");
     $('.univers2 .amount').text(prix2.toFixed(2) + "€");
 
-    $('.univers3 .pricing__button').removeClass("button-gray pricing__button js-popup-open" ).addClass("button pricing__button js-popup-open");
+    $('.univers3 .pricing__button').removeClass("button-gray pricing__button").addClass("button pricing__button");
+    $('#prix').val(prix3.toFixed(2));
   }
 
   $('.button-gray.pricing__button').addClass("disabled").prop("disabled", true);
+  $('.button.pricing__button').removeClass("disabled").prop("disabled", false);
   if (nbApp > 1 && !$('.pricing__plans').hasClass('changed_once')) {
     $('.pricing__plans').addClass('changed_once')
   } else if(nbApp<=1){
     $('.pricing__plans').removeClass('changed_once')
   }
   console.log('App ' + nbApp);
+  $('#nbAppTot').val(nbApp);
   console.log('Chaud ' + nbChaud);
+  $('#nbChaud').val(nbChaud);
   console.log('Froid ' + nbFroid);
+  $('#nbFroid').val(nbFroid);
   console.log('Autre ' + nbAutres);
+  $('#nbAutres').val(nbAutres);
   console.log('Univers ' + nbUnivers);
+  $('#nbUnivers').val(nbUnivers);
+
+  $('#formule').val(nbUnivers);
+  
+  
   $('.nbApp').text(nbApp);
 })
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
 AOS.init({
   once: true
@@ -281,3 +307,13 @@ AOS.init({
 
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+var Device = {
+  isMobile: function () {
+      return $(".ismobile").is(":visible");
+  },
+};
+
+$(".btn-mobile").on('click',function () {
+  $(".main-nav").toggleClass("main-nav--open");
+});

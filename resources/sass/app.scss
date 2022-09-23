@@ -194,3 +194,17 @@ margin-top:100px;
         .changed_once .pricing__plan_premium .pricing__details{
         display:block !important;
         }
+
+
+@media(max-width:767px){
+    .js-tabs-select option{
+        font-weight:bolder;
+        }
+        
+        .js-tabs-select {
+        padding-right:14px !important;
+        width:80%;
+        margin-left:10%;
+        }
+        
+}
