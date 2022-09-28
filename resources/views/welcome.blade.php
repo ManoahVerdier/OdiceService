@@ -135,6 +135,50 @@
             </div>
           </div>
         </div>
+        <div class="section discover" id="pourquoi">
+          <div class="discover__container container">
+            <h2 class="discover__title h2">Pourquoi choisir Odice Service + ?</h2>
+            <div class="discover__group">
+              <div data-aos="fade-up" data-aos-duration="800" class="discover__item">
+                <div class="discover__col">
+                  <h4>Réparation sans Odice Service +</h4>
+                  <div class="discover__list" style="background-image:url('{{ Vite::asset('resources/img/FrameBlue.png')}}')">
+                    
+                    <div class="discover__box">
+                      Pour une intervention
+                      <br>
+                      <br>
+                      
+                        Déplacement et diagnostic : 70€<br>
+                        + Main d’oeuvre : 78€<br>
+                        + Pièces détachées : 300€ en moyenne<br>
+                        = 448€ en moyenne / Equipement<br>
+                        <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="discover__col">
+                  <h4>Réparation avec Odice Service +</h4>
+                  <div class="discover__list" style="background-image:url('{{ Vite::asset('resources/img/FrameDarkBlue.png')}}')">
+                    
+                    <div class="discover__box">
+                      <p>Un abonnement tout compris</p>
+                      <p>à partir de 79,99€ TTC/mois</p>
+                      <p>soit : 958,88€ TTC/an</p>
+                      <ul>
+                        <li>Valable sur tous les appareils couverts <br>par votre formule, peu importe le <br>nombre de pannes <br></li>
+                        <li>Déplacement, diagnostic, main-<br>d'œuvre et pièces détachées : inclus <br></li>
+                        <li>Expertise de nos techniciens SAV</li>
+                        <br>
+                      </ul>
+                      <img src="{{ Vite::asset('resources/img/icon.png')}}"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="section discover" id="discover">
           <div class="discover__container container">
             <h2 class="discover__title h2">Un abonnement Odice Service +, tout compris !</h2>
@@ -348,11 +392,11 @@
                 <div class="univers1 pricing__plan">
                   <div class="pricing__head">
                     <div class="pricing__line">
-                      <div class="pricing__subtitle h3">Gold</div>
+                      <div class="pricing__subtitle h3">Silver</div>
                     </div>
                     <div class="pricing__counter">1 univers au choix</div>
-                    <div class="pricing__price h3"><span class="amount">79.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
-                    <div class="pricing__details h6">Soit 79.99€ par mois et par appareil</div>
+                    <div class="pricing__price h3"><span class="amount">99.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
+                    <div class="pricing__details h6">Soit 99.99€ par mois et par appareil</div>
                   </div>
                   <div class="pricing__body">
                     <div class="pricing__options">
@@ -369,7 +413,7 @@
                 <div class="univers2 pricing__plan">
                   <div class="pricing__head">
                     <div class="pricing__line">
-                      <div class="pricing__subtitle h3">Premium</div>
+                      <div class="pricing__subtitle h3">Gold</div>
                     </div>
                     <div class="pricing__counter">2 univers au choix</div>
                     <div class="pricing__price h3"><span class="amount">89.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
@@ -393,8 +437,8 @@
                       <div class="pricing__recommended">Recommandé</div>
                     </div>
                     <div class="pricing__counter">3 univers au choix</div>
-                    <div class="pricing__price h3"><span class="amount">99.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
-                    <div class="pricing__details h6" style="display:none">Soit 99.99€ par mois et par appareil</div>
+                    <div class="pricing__price h3"><span class="amount">79.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
+                    <div class="pricing__details h6" style="display:none">Soit 79.99€ par mois et par appareil</div>
                   </div>
                   <div class="pricing__body">
                     <div class="pricing__options">

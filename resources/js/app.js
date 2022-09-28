@@ -188,9 +188,9 @@ $('.nbApp').on('change', function () {
   $('.pricing__line .pricing__recommended').remove();
 
   $('.button.pricing__button').removeClass("button pricing__button").addClass("button-gray pricing__button");
-  let prix1 = 79.99 * nbApp;
+  let prix1 = 99.99 * nbApp;
   let prix2 = 89.99 * nbApp;
-  let prix3 = 99.99 * nbApp;
+  let prix3 = 79.99 * nbApp;
   if (nbUnivers == 0) {
     $('.univers3').addClass("pricing__plan_premium").removeClass("disabled");
     $('.univers3 .pricing__line').append('<div class="pricing__recommended">Recommandé</div>');
