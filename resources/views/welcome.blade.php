@@ -66,28 +66,28 @@
               <div data-aos="fade-right" data-aos-duration="800" class="main__btns"><a class="button main__button" href="#details">Je m'abonne</a><a class="button-gray main__button" href="#univers"> En savoir plus</a></div>
             </div>
             <div class="generation__list w-100">
-              <div class="generation__item main_item" data-aos="fadeInDown" data-aos-duration="800">
+              <div class="generation__item main_item" data-aos="fade-right" data-aos-duration="1000">
                 <div class="main_icon">
                   <img src="{{ Vite::asset('resources/img/tools.png')}}" alt="">
                 </div>
                 <div class="main_text">
-                  3 formules selon vos besoins
+                  3 formules selon <br>vos besoins
                 </div>
               </div>
-              <div class="generation__item main_item" data-aos="fadeInDown" data-aos-duration="800">
+              <div class="generation__item main_item" data-aos="fade-up" data-aos-duration="1000">
                 <div class="main_icon">
                   <img src="{{ Vite::asset('resources/img/callout.png')}}" alt="">
                 </div>
                 <div class="main_text">
-                  Pour vos produits achetés chez Odice ou ailleurs
+                  Pour vos produits achetés <br>chez Odice ou ailleurs
                 </div>
               </div>
-              <div class="generation__item main_item" data-aos="fadeInDown" data-aos-duration="800">
+              <div class="generation__item main_item" data-aos="fade-left" data-aos-duration="1000">
                 <div class="main_icon">
                   <img src="{{ Vite::asset('resources/img/rocket.png')}}" alt="">
                 </div>
                 <div class="main_text">
-                  Engagement 12 mois. Au-delà, résiliable sans frais
+                  Engagement 12 mois. <br>Au-delà, résiliable sans frais
                 </div>
               </div>
             </div>
