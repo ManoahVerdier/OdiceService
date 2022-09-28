@@ -103,7 +103,7 @@
                 <div class="generation__preview" style="background-image: url('{{ Vite::asset('resources/img/univers3.png')}}');background-position:center;background-size:cover">
                   <div class="generation__image"><img src="{{ Vite::asset('resources/img/generation-pic-3.png')}}" alt=""></div>
                 </div>
-                <h5 class="generation__subtitle h5">Prêt à poser</h5>
+                <h5 class="generation__subtitle h5">Prêt à brancher</h5>
                 <div class="generation__content">Robot, cutter</div>
               </div>
             </div>
@@ -178,12 +178,12 @@
               <div class="tabs__nav">
                 <button class="tabs__button js-tabs-link active">Chaud</button>
                 <button class="tabs__button js-tabs-link">Froid laverie</button>
-                <button class="tabs__button js-tabs-link">Prêt à poser</button>
+                <button class="tabs__button js-tabs-link">Prêt à brancher</button>
               </div>
               <select class="select select_small js-tabs-select">
                 <option>Chaud</option>
                 <option>Froid laverie</option>
-                <option>Prêt à poser</option>
+                <option>Prêt à brancher</option>
               </select>
               <div class="tabs__container">
                 <div class="tabs__item js-tabs-item">

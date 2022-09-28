@@ -30,7 +30,7 @@
     @endforeach
 @endif
 @if($request->nbAutres>0)
-    <p style="margin-left:30px;margin-top:10px !important; margin-bottom:10px !important"><i>Autres</i></p>
+    <p style="margin-left:30px;margin-top:10px !important; margin-bottom:10px !important"><i>Prêt à brancher</i></p>
     @foreach($request["nbApp"]["autres"] as $id=>$nb)
         @if($nb>0)
             <p style="margin-left:60px; margin-top:0px !important; margin-bottom:0px !important;">{{  $autres[$id]." : ".$nb }}</p>

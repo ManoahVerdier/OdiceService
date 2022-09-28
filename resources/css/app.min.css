@@ -2967,7 +2967,7 @@ svg {
 .main__wrap {
   position: relative;
   z-index: 2;
-  max-width: 356px;
+  max-width: 386px;
   margin-bottom: 284px;
 }
 @media only screen and (max-width: 1339px) {
