@@ -282,7 +282,7 @@ margin-top:100px;
             margin: 32px 0 0;
         }
 
-            .section__main{
+            .section .main{
             padding:41px 72px !important;
             }
             
@@ -293,4 +293,8 @@ margin-top:100px;
             .main__preview {
                 margin: 30px -65px 20px -65px;
             }
+    }
+
+    .section .main{
+        padding:81px 72px !important;
     }

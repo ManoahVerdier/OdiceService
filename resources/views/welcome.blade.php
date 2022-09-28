@@ -58,7 +58,7 @@
       <!-- container-->
       <div class="page__container">
         <!-- main-->
-        <div class="section main" style="padding:41px 72px !important">
+        <div class="section main">
           <div class="main__container container">
             <div class="main__wrap">
               <h1 data-aos="fade-right" data-aos-duration="200" class="main__title hero">Odice <br>Service +</h1>
