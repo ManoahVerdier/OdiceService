@@ -166,8 +166,8 @@
                       <p>à partir de 79,99€ TTC/mois</p>
                       <p>soit : 958,88€ TTC/an</p>
                       <ul>
-                        <li>Valable sur tous les appareils couverts <br>par votre formule, peu importe le <br>nombre de pannes <br></li>
-                        <li>Déplacement, diagnostic, main-<br>d'œuvre et pièces détachées : inclus <br></li>
+                        <li>Valable sur tous les appareils couverts par votre formule, peu importe le nombre de pannes</li>
+                        <li>Déplacement, diagnostic, main-d'œuvre et pièces détachées : inclus </li>
                         <li>Expertise de nos techniciens SAV</li>
                         <br>
                       </ul>
