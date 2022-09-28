@@ -275,3 +275,10 @@ margin-top:100px;
     font-weight:500;
     padding:5px 0px 5px 12px;
     }
+
+    @media only screen and (max-width: 767px){
+        .generation__item.main_item {
+            width: 100%;
+            margin: 32px 0 0;
+        }
+    }
