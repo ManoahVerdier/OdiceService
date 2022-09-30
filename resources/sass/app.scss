@@ -393,3 +393,25 @@ margin-top:100px;
         margin-top:.25em;
         }
     }
+
+    #exemple .generation__image{
+        padding:20px;
+      }
+      
+      #exemple .generation__preview{
+        padding:45px;
+        height:auto;
+      }
+      
+      #exemple .generation__image img {
+        width: auto;
+      }
+
+      .hidden{
+        display:none;
+        visibility:hidden;
+      }
+
+      #exemple{
+        margin-bottom:100px;
+      }
