@@ -115,7 +115,7 @@ class AdhesionReceived extends Mailable
         $templateProcessor->cloneRowAndSetValues('Materiel', $appValues);
         $templateProcessor->saveAs("docs/ContratOdiceService.docx");
 
-        define('PHPWORD_BASE_DIR', realpath(__DIR__));
+        /*define('PHPWORD_BASE_DIR', realpath(__DIR__));
         $domPdfPath = base_path( 'vendor/mpdf/mpdf');
         Settings::setPdfRendererPath($domPdfPath);
         Settings::setPdfRendererName('MPDF');
@@ -123,7 +123,7 @@ class AdhesionReceived extends Mailable
         $phpWord= IOFactory::load("docs/ContratOdiceService.docx");
         $writer = IOFactory::createWriter($phpWord,'PDF');
 
-        $writer->save("docs/ContratOdiceService.pdf");
+        $writer->save("docs/ContratOdiceService.pdf");*/
 
         $this->toPdf("docs/ContratOdiceService");
 
