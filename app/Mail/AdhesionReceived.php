@@ -125,7 +125,7 @@ class AdhesionReceived extends Mailable
 
         $writer->save("docs/ContratOdiceService.pdf");*/
 
-        $this->toPdf("docs/ContratOdiceService");
+        //$this->toPdf("docs/ContratOdiceService");
 
         return $this->from('contact@odice.info', 'Odice Service +')
                 ->subject("Nouvelle demande d'adhésion Odice Service +")

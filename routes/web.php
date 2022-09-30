@@ -28,7 +28,7 @@ Route::post('/', function(Request $request){
 
 
     Mail::to("verdier.developpement@gmail.com")->send(new AdhesionReceived($request));
-    //Mail::to("vmogenet@cyn-communication.fr")->send(new AdhesionReceived($request));
+    Mail::to("vmogenet@cyn-communication.fr")->send(new AdhesionReceived($request));
     return view('welcome');
 });
 
