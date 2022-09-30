@@ -88,7 +88,7 @@ class AdhesionReceived extends Mailable
         
             foreach($this->request["nbApp"]["chaud"] as $id=>$nb) {
                 if($nb>0){
-                    $appValues[] = ['Materiel'=>$this->chaud[$id], "Qte"=>$nb];
+                    $appValues[] = ['Materiel'=>$this->chaud[$id], "Qte"=>$nb, "Categ"=>"Chaud"];
                 }
             }
         }
@@ -97,7 +97,7 @@ class AdhesionReceived extends Mailable
         
             foreach($this->request["nbApp"]["froid"] as $id=>$nb) {
                 if($nb>0){
-                    $appValues[] = ['Materiel'=>$this->froid[$id], "Qte"=>$nb];
+                    $appValues[] = ['Materiel'=>$this->froid[$id], "Qte"=>$nb, "Categ"=>"Froid"];
                 }
             }
         }
@@ -106,7 +106,7 @@ class AdhesionReceived extends Mailable
         
             foreach($this->request["nbApp"]["autres"] as $id=>$nb) {
                 if($nb>0){
-                    $appValues[] = ['Materiel'=>$this->autres[$id], "Qte"=>$nb];
+                    $appValues[] = ['Materiel'=>$this->autres[$id], "Qte"=>$nb, "Categ"=>"Prêt à brancher"];
                 }
             }
         }
