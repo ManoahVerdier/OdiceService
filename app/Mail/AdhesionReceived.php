@@ -130,8 +130,8 @@ class AdhesionReceived extends Mailable
         return $this->from('contact@odice.info', 'Odice Service +')
                 ->subject("Nouvelle demande d'adhésion Odice Service +")
                 ->view('emails.adhesionReceived')
-                ->attach('docs/ContratOdiceService.docx')
-                ->attach('docs/ContratOdiceService.pdf');
+                ->attach('docs/ContratOdiceService.docx');
+                //->attach('docs/ContratOdiceService.pdf');
 
         
     }
