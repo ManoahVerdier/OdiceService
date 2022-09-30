@@ -4,6 +4,7 @@ use App\Mail\AdhesionReceived;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +20,15 @@ use Illuminate\Support\Facades\Mail;
 
 
 Route::get('/', function () {
+    
     return view('welcome');
 });
 Route::post('/', function(Request $request){
     
+
+
     Mail::to("verdier.developpement@gmail.com")->send(new AdhesionReceived($request));
-    Mail::to("vmogenet@cyn-communication.fr")->send(new AdhesionReceived($request));
+    //Mail::to("vmogenet@cyn-communication.fr")->send(new AdhesionReceived($request));
     return view('welcome');
 });
+

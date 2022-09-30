@@ -220,8 +220,8 @@
                     </div>
                     <div class="discover__box">
                       <div class="discover__details">
-                        <div class="discover__category h6">Une relation privilégiée</div>
-                        <div class="discover__content">Avec nos équipes SAV</div>
+                        <div class="discover__category h6">Intervention dans la journée</div>
+                        <div class="discover__content">Ou réparation sous 3 jours ou remplacement materiel de prêt</div>
                       </div>
                       <div class="discover__icon" style="background-color: #B6DFEC;"><img src="{{ Vite::asset('resources/img/mouse.svg')}}" alt=""></div>
                     </div>
@@ -519,8 +519,35 @@
             </div>
           </div>
         </div>
+        <div class="generation" id="exemple">
+          <div class="generation__container container ">
+            <div class="w-100 d-inline-block">
+              <h3 class="website__title h3">Un exemple pour illustrer les avantages à adhérer à Odice Service +</h3>
+            </div>
+            <div class="generation__list w-100">
+              <div class="generation__item" data-aos="fadeInDown" data-aos-duration="800">
+                <div class="generation__preview" >
+                  <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-1.png')}}" alt=""></div>
+                </div>
+                <div class="generation__content">6 mois après Monsieur Dubreuil est en panne de son four mixte</div>
+              </div>
+              <div class="generation__item" data-aos="fadeInDown" data-aos-duration="800" data-aos-delay="200">
+                <div class="generation__preview">
+                  <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-2.png')}}" alt=""></div>
+                </div>
+                <div class="generation__content">Le technicien intervient dans la journée</div>
+              </div>
+              <div class="generation__item" data-aos="fadeInDown" data-aos-duration="800" data-aos-delay="400">
+                <div class="generation__preview" >
+                  <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-3.png')}}" alt=""></div>
+                </div>
+                <div class="generation__content">Si la réparation ne s est pas effectué il bénéficie d un remplacement de matériel de prêt gratuitement en attendant la réparation définitive</div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- faq-->
-      <div class="section faq">
+      <div class="section faq hidden">
         <div class="faq__container container">
           <div class="faq__top">
             <div class="faq__title h2">Questions fréquentes</div>
