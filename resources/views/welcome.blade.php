@@ -50,6 +50,13 @@
     ])
   </head>
   <body>
+    <style>
+      @media only screen and (max-width: 767px){
+        .main__wrap{
+          padding-top:100px;
+        }
+      }
+    </style>
     <!-- page-->
     <div class="page" id="page">
       <!-- header-->
