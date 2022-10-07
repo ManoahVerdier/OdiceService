@@ -17,6 +17,9 @@ class AdhesionReceived extends Mailable
     use Queueable, SerializesModels;
 
     public $request;
+    public $chaud;
+    public $froid;
+    public $autres;
     
 
     /**
@@ -24,9 +27,12 @@ class AdhesionReceived extends Mailable
      *
      * @return void
      */
-    public function __construct($request)
+    public function __construct($request,$chaud,$froid,$autres)
     {
         $this->request=$request;
+        $this->chaud=$chaud;
+        $this->froid=$froid;
+        $this->autres=$autres;
     }
 
     /**
