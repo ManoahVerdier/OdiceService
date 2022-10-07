@@ -126,7 +126,7 @@ class SubscriptionController extends Controller
         $file = ($path.".docx");
         $request = new \Aspose\Words\Model\Requests\ConvertDocumentRequest($file, $format,null);
         $result = $api->ConvertDocument($request);	
-        copy($result->getPathName(),$path.".pdf");
+        copy($result->getPathName(),"OdiceService_ContratNonSigne.pdf");
     }
 
     public function makeSignature(Request $request){
