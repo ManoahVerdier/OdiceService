@@ -155,7 +155,7 @@ class SubscriptionController extends Controller
                 ],
             'headers' => [
                 'accept' => 'application/json',
-                'authorization' => 'Bearer PEClIYKE5mgtU2OdTUaZOAJUEShUfxLv',
+                'authorization' => 'Bearer '.env("YOUSIGN_SECRET"),
             ],
             ]);
             
@@ -188,7 +188,7 @@ class SubscriptionController extends Controller
                     json_encode($post),
                 'headers' => [
                 'accept' => 'application/json',
-                'authorization' => 'Bearer PEClIYKE5mgtU2OdTUaZOAJUEShUfxLv',
+                'authorization' => 'Bearer '.env("YOUSIGN_SECRET"),
                 'content-type' => 'application/json'
                 ]
             ]);
@@ -198,7 +198,7 @@ class SubscriptionController extends Controller
             $response = $client->request('POST', 'https://api-sandbox.yousign.app/v3/signature_requests/'.$idRequest.'/activate', [
                 'headers' => [
                 'accept' => 'application/json',
-                'authorization' => 'Bearer PEClIYKE5mgtU2OdTUaZOAJUEShUfxLv',
+                'authorization' => 'Bearer '.env("YOUSIGN_SECRET"),
                 ],
             ]);
             
@@ -220,7 +220,7 @@ class SubscriptionController extends Controller
         $client->request('GET', 'https://api-sandbox.yousign.app/v3/signature_requests/'.$signatureId.'/documents/download', [
             'headers' => [
               'accept' => 'application/zip, application/pdf',
-              'authorization' => 'Bearer PEClIYKE5mgtU2OdTUaZOAJUEShUfxLv',
+              'authorization' => 'Bearer '.env("YOUSIGN_SECRET"),
             ],
             'sink'=>$pdfFileResource
           ]
