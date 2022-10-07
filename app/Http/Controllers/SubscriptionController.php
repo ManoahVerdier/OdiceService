@@ -64,9 +64,8 @@ class SubscriptionController extends Controller
         $this->downloadSignedDocument($request->signature_request_id);
         $notification = new AdhesionReceived(session('attributes'),$this->chaud,$this->froid,$this->autres);
         Mail::to("verdier.developpement@gmail.com")->send($notification);
-        
-        //Mail::to("vmogenet@cyn-communication.fr")->send($this->adhesion_received);
-        //return view('welcome');
+        Mail::to("vmogenet@cyn-communication.fr")->send($notification);
+        return view('welcome');
     }
 
     public function createWordFiles(Request $request){
