@@ -31,6 +31,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
       var viewportmeta = document.querySelector('meta[name="viewport"]');
       if (viewportmeta) {
@@ -228,7 +229,7 @@
                     <div class="discover__box">
                       <div class="discover__details">
                         <div class="discover__category h6">Intervention dans la journée</div>
-                        <div class="discover__content">Ou réparation sous 3 jours ou remplacement materiel de prêt</div>
+                        <div class="discover__content">Remplacement de matériel de prêt si il n’est pas réparable</div>
                       </div>
                       <div class="discover__icon" style="background-color: #B6DFEC;"><img src="{{ Vite::asset('resources/img/mouse.svg')}}" alt=""></div>
                     </div>
@@ -264,120 +265,47 @@
               </select>
               <div class="tabs__container">
                 <div class="tabs__item js-tabs-item">
+                  <div class="inputWrap">
+                    <input type="text" name="searchChaud" class="searchChaud form-control" placeholder="Filtrer..."/>
+                  </div>
                   <div class="details__row">
                     <table class="table table-striped table-borderless table-hover">
-                      <tr>
-                        <td>Simple service gaz</td>
-                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][0]" type="number" min=0 step=1 value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>4 feux vifs sur neutre</td>
-                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][1]" type="number" min=0 step=1 value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>2 feux vifs sur neutre</td>
-                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][2]" type="number" min=0 step=1 value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Plaque coup de feu sur four gaz</td>
-                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][3]" type="number" min=0 step=1 value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Plaque coup de feu gaz sur neutre</td>
-                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][4]" type="number" min=0 step=1 value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>grillade snack simple gaz</td>
-                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][5]" type="number" min=0 step=1 value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>grillade snack double gaz</td>
-                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][6]" type="number" min=0 step=1 value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>friteuse gaz 1 bac</td>
-                        <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][7]" type="number" min=0 step=1 value="0"/></td>
-                      </tr>
+                      @foreach($chaud as $id=>$nom)
+                        <tr class="trChaud">
+                          <td>{{ $nom }}</td>
+                          <td><input class="form-control nbApp chaud" form="sendAdhesion" name="nbApp[chaud][{{ $id }}]" type="number" min=0 step=1 value="0" label="{{ $nom }}"/></td>
+                        </tr>
+                      @endforeach
                     </table>
                   </div>
                 </div>
                 <div class="tabs__item js-tabs-item">
+                  <div class="inputWrap">
+                    <input type="text" name="searchFroid" class="searchFroid form-control" placeholder="Filtrer..."/>
+                  </div>
                   <div class="details__row">
                     <table class="table table-striped table-borderless table-hover">
-                      <tr>
-                        <td>Armoire froide 1 ou 2  portes</td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][0]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Armoire à chariots</td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][1]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Cellule à grilles</td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][2]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Cellule à chariots</td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][3]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Chambre froide positive</td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][4]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Chambre froide négative</td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][5]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Meuble bas, tours, meubles self </td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][6]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Vitrine de self</td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][7]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Gondole self service</td>
-                        <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][8]" value="0"/></td>
-                      </tr>
+                      @foreach($froid as $id=>$nom)
+                        <tr class="trFroid">
+                          <td>{{ $nom }}</td>
+                          <td><input class="form-control nbApp froid" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[froid][{{ $id }}]" value="0" label="{{ $nom }}"/></td>
+                        </tr>
+                      @endforeach
                     </table>
                   </div>
                 </div>
                 <div class="tabs__item js-tabs-item">
+                  <div class="inputWrap">
+                    <input type="text" name="searchAutres" class="searchAutres form-control" placeholder="Filtrer..."/>
+                  </div>
                   <div class="details__row">
                     <table class="table table-striped table-borderless table-hover">
-                      <tr>
-                        <td>Cutter/ Blender</td>
-                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][0]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Armoire à couteux</td>
-                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][1]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>désinsectiseur</td>
-                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][2]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Laminoir</td>
-                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][3]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Ouvre boites</td>
-                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][4]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Bermixer / kitchened</td>
-                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][5]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Girafe broyeur</td>
-                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][6]" value="0"/></td>
-                      </tr>
-                      <tr>
-                        <td>Coupe legumes</td>
-                        <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][7]" value="0"/></td>
-                      </tr>
+                      @foreach($autres as $id=>$nom)
+                        <tr class="trAutres">
+                          <td>{{ $nom }}</td>
+                          <td><input class="form-control nbApp autre" form="sendAdhesion" type="number" min=0 step=1 name="nbApp[autres][{{ $id }}]" value="0" label="{{ $nom }}"/></td>
+                        </tr>
+                      @endforeach
                     </table>
                   </div>
                 </div>
@@ -491,7 +419,15 @@
                 <div class="subscription__fieldset">
                   <div class="field field_icon field_light">
                     <div class="field__wrap">
-                      <input class="field__input" type="text" name="name" placeholder="Votre nom" required>
+                      <input class="field__input" type="text" name="last_name" placeholder="Votre nom" required>
+                      <svg class="icon icon-profile">
+                        <use xlink:href="#icon-profile"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="field field_icon field_light">
+                    <div class="field__wrap">
+                      <input class="field__input" type="text" name="first_name" placeholder="Votre prénom" required>
                       <svg class="icon icon-profile">
                         <use xlink:href="#icon-profile"></use>
                       </svg>

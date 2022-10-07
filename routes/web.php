@@ -1,10 +1,10 @@
 <?php
 
-use App\Mail\AdhesionReceived;
+use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use Carbon\Carbon;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,16 +19,6 @@ use Carbon\Carbon;
 
 
 
-Route::get('/', function () {
-    
-    return view('welcome');
-});
-Route::post('/', function(Request $request){
-    
-
-
-    Mail::to("verdier.developpement@gmail.com")->send(new AdhesionReceived($request));
-    Mail::to("vmogenet@cyn-communication.fr")->send(new AdhesionReceived($request));
-    return view('welcome');
-});
-
+Route::get('/',[SubscriptionController::class, 'homepage']);
+Route::post('/', [SubscriptionController::class, 'prepareStore']);
+Route::get('/subscriptionComplete', [SubscriptionController::class, 'store']);

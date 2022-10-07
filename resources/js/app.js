@@ -8,15 +8,10 @@ import.meta.glob([
 import 'jquery-nice-select';  
 import 'bootstrap';
 
-  
-
-
-
 import 'bootstrap';
 import 'magnific-popup';
 import AOS from 'aos';
 import simpleParallax from  'simple-parallax-js';
-
 
 
 
@@ -111,6 +106,58 @@ $(document).ready(function () {
   $('.select').niceSelect();
 }); // tabs
 
+$(function () {
+  jQuery.expr[':'].contains = function(a, i, m) {
+    return jQuery(a).text().toUpperCase()
+        .indexOf(m[3].toUpperCase()) >= 0;
+  };
+  var chaud = [];
+  var froid = [];
+  var autres = [];
+  
+  $('.chaud').each(function () {
+    chaud.push($(this).attr("label"));
+  });
+
+  $('.froid').each(function () {
+    froid.push($(this).attr("label"));
+  });
+
+  $('.autre').each(function () {
+    autres.push($(this).attr("label"));
+  });
+  
+  
+  $( ".searchChaud" ).autocomplete({
+    source: chaud
+  }).on("input", function () {
+    $('.trChaud').removeClass("hidden");
+    let val = $(this).val();
+    $($('.trChaud:not(:contains("' + val + '"))')).addClass("hidden");
+  }).on("autocompleteselect", function (event, ui ) {
+    $($('.trChaud:not(:contains("' + ui.item.label + '"))')).addClass("hidden");
+  });
+
+  $( ".searchFroid" ).autocomplete({
+    source: froid
+  }).on("input", function () {
+    $('.trFroid').removeClass("hidden");
+    let val = $(this).val();
+    $($('.trFroid:not(:contains("' + val + '"))')).addClass("hidden");
+  }).on("autocompleteselect", function (event, ui ) {
+    $($('.trFroid:not(:contains("' + ui.item.label + '"))')).addClass("hidden");
+  });
+
+  $( ".searchAutres" ).autocomplete({
+    source: autres
+  }).on("input", function () {
+    $('.trAutres').removeClass("hidden");
+    let val = $(this).val();
+    $($('.trAutres:not(:contains("' + val + '"))')).addClass("hidden");
+  }).on("autocompleteselect", function (event, ui ) {
+    $($('.trAutres:not(:contains("' + ui.item.label + '"))')).addClass("hidden");
+  });
+});
 (function () {
   let tabs = $('.js-tabs');
   tabs.each(function () {
