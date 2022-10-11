@@ -198,7 +198,7 @@ border-radius:50px;
 -webkit-box-shadow: 0px 0px 15px 5px rgba(112,112,112,0.2); 
 box-shadow: 0px 0px 15px 5px rgba(112,112,112,0.2);
 padding-top:50px;
-padding-bottom:50px;
+padding-bottom:1em;
 margin-top:100px;
 }
 
@@ -485,4 +485,15 @@ margin-top:100px;
         
         .ui-menu-item{
         padding: 5px;
+        }
+
+        #exemple .generation__item {
+            flex: 0 0 calc(25% - 33px);
+            width: calc(25% - 33px);
+            margin: 32px 11px 0;
+
+            @media only screen and (max-width: 767px){
+                width: 100%;
+                margin: 32px 0 0;
+            }
         }

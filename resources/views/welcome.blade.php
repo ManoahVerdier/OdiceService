@@ -310,6 +310,7 @@
                   </div>
                 </div>
               </div>
+              <p class="text-center" style="margin-top:1.5em"><a href="CGV_Odice_Service.pdf">Consulter nos CGV</a></p>
             </div>
           </div>
         </div>
@@ -472,17 +473,23 @@
                 <div class="generation__preview" >
                   <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-1.png')}}" alt=""></div>
                 </div>
+                <div class="generation__content">En 2022,  Monsieur Dubreuil s’abonne à Odice Service + pour son four mixte</div>
+              </div>
+              <div class="generation__item" data-aos="fadeInDown" data-aos-duration="800">
+                <div class="generation__preview" >
+                  <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-2.png')}}" alt=""></div>
+                </div>
                 <div class="generation__content">6 mois après Monsieur Dubreuil est en panne de son four mixte</div>
               </div>
               <div class="generation__item" data-aos="fadeInDown" data-aos-duration="800" data-aos-delay="200">
                 <div class="generation__preview">
-                  <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-2.png')}}" alt=""></div>
+                  <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-3.png')}}" alt=""></div>
                 </div>
                 <div class="generation__content">Le technicien intervient dans la journée</div>
               </div>
               <div class="generation__item" data-aos="fadeInDown" data-aos-duration="800" data-aos-delay="400">
                 <div class="generation__preview" >
-                  <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-3.png')}}" alt=""></div>
+                  <div class="generation__image"><img src="{{ Vite::asset('resources/img/exemple-4.png')}}" alt=""></div>
                 </div>
                 <div class="generation__content">Si la réparation ne s est pas effectué il bénéficie d un remplacement de matériel de prêt gratuitement en attendant la réparation définitive</div>
               </div>
