@@ -310,7 +310,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-center" style="margin-top:1.5em"><a href="CGV_Odice_Service.pdf">Consulter nos CGV</a></p>
+              <p class="text-center" style="margin-top:1.5em"><a target="_blank" href="CGV_Odice_Service.pdf">Consulter nos CGV</a></p>
             </div>
           </div>
         </div>
