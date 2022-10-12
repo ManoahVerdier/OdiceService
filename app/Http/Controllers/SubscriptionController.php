@@ -26,6 +26,7 @@ class SubscriptionController extends Controller
 
             while (($data = fgetcsv($open, null,";")) !== FALSE) {
                 $data = array_map("utf8_encode", $data);
+                $data[0] = ucfirst($data[0]);
                 if($data[1] ?? false){
                     switch($data[1]){
                         case 1 : $this->chaud[] = $data[0]; break;
