@@ -20,5 +20,6 @@ use Illuminate\Support\Facades\Mail;
 
 
 Route::get('/',[SubscriptionController::class, 'homepage']);
+Route::get('/test',[SubscriptionController::class, 'test']);
 Route::post('/', [SubscriptionController::class, 'prepareStore']);
 Route::get('/subscriptionComplete', [SubscriptionController::class, 'store']);

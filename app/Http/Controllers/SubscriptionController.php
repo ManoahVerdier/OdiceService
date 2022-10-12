@@ -14,39 +14,31 @@ class SubscriptionController extends Controller
 {
     public AdhesionReceived $adhesion_received;
 
-    public $chaud = array(
-        "Simple service gaz",
-        "4 feux vifs sur neutre",
-        "2 feux vifs sur neutre",
-        "Plaque coup de feu sur four gaz",
-        "Plaque coup de feu gaz sur neutre",
-        "grillade snack simple gaz",
-        "grillade snack double gaz",
-        "friteuse gaz 1 bac"
-    );
+    public $chaud = array();
 
-    public $froid = array(
-        "Armoire froide 1 ou 2  portes",
-        "Armoire à chariots",
-        "Cellule à grilles",
-        "Cellule à chariots",
-        "Chambre froide positive",
-        "Chambre froide négative",
-        "Meuble bas, tours, meubles self ",
-        "Vitrine de self",
-        "Gondole self service"
-    );
+    public $froid = array();
 
-    public $autres = array(
-        "Cutter/ Blender",
-        "Armoire à couteux",
-        "désinsectiseur",
-        "Laminoir",
-        "Ouvre boites",
-        "Bermixer / kitchened",
-        "Girafe broyeur",
-        "Coupe legumes"
-    );
+    public $autres = array();
+
+    public function __construct(){
+        
+        if (($open = fopen(storage_path() . "/app/materiel.csv", "r")) !== FALSE) {
+
+            while (($data = fgetcsv($open, null,";")) !== FALSE) {
+                $data = array_map("utf8_encode", $data);
+                if($data[1] ?? false){
+                    switch($data[1]){
+                        case 1 : $this->chaud[] = $data[0]; break;
+                        case 2 : $this->froid[] = $data[0]; break;
+                        case 3 : $this->autres[] = $data[0]; break;
+                    }
+                }
+            }
+
+            fclose($open);
+        } 
+
+    }
 
     public function homepage(Request $request){
         return view("welcome", ["chaud"=>$this->chaud,"froid"=>$this->froid,"autres"=>$this->autres]);
