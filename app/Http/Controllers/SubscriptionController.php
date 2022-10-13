@@ -39,6 +39,10 @@ class SubscriptionController extends Controller
             fclose($open);
         } 
 
+        $this->chaud = collect($this->chaud)->sort()->toArray();
+        $this->froid = collect($this->froid)->sort()->toArray();
+        $this->autres = collect($this->autres)->sort()->toArray();
+
     }
 
     public function homepage(Request $request){
