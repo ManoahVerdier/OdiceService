@@ -171,7 +171,7 @@ class SubscriptionController extends Controller
             $signer->info->phone_number=$phone;
             $signer->signature_authentication_mode="otp_email";
             $signer->redirect_urls = new \stdClass();
-            $signer->redirect_urls->success=env("APP_URL")."/subscriptionComplete";
+            $signer->redirect_urls->success=env("APP_URL")."subscriptionComplete";
             $post = new \stdClass();
             $post->name = "Signature contrat Odice Service +";
             $post->delivery_mode="none";
