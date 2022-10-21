@@ -129,7 +129,7 @@ class SubscriptionController extends Controller
         
         try{
             $client = new \GuzzleHttp\Client();
-            $response = $client->request('POST', 'https://api-sandbox.yousign.app/v3/documents', [
+            $response = $client->request('POST', 'https://api.yousign.app/v3/documents', [
             'multipart' => [
                 [
                     'name' => 'file',
@@ -179,7 +179,7 @@ class SubscriptionController extends Controller
             $post->signers = [
                 $signer
             ];
-            $response = $client->request('POST', 'https://api-sandbox.yousign.app/v3/signature_requests', [
+            $response = $client->request('POST', 'https://api.yousign.app/v3/signature_requests', [
                 'body' => 
                     json_encode($post),
                 'headers' => [
@@ -191,7 +191,7 @@ class SubscriptionController extends Controller
             
             $idRequest = json_decode($response->getBody())->id;
 
-            $response = $client->request('POST', 'https://api-sandbox.yousign.app/v3/signature_requests/'.$idRequest.'/activate', [
+            $response = $client->request('POST', 'https://api.yousign.app/v3/signature_requests/'.$idRequest.'/activate', [
                 'headers' => [
                 'accept' => 'application/json',
                 'authorization' => 'Bearer '.env("YOUSIGN_SECRET"),
@@ -213,7 +213,7 @@ class SubscriptionController extends Controller
         $pdfFilePath = 'docs/OdiceService_ContratSigne.pdf'; // specify your path
         $pdfFileResource = fopen($pdfFilePath, 'w+');
         $client = new \GuzzleHttp\Client();
-        $client->request('GET', 'https://api-sandbox.yousign.app/v3/signature_requests/'.$signatureId.'/documents/download', [
+        $client->request('GET', 'https://api.yousign.app/v3/signature_requests/'.$signatureId.'/documents/download', [
             'headers' => [
               'accept' => 'application/zip, application/pdf',
               'authorization' => 'Bearer '.env("YOUSIGN_SECRET"),
