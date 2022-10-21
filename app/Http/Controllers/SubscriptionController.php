@@ -134,7 +134,7 @@ class SubscriptionController extends Controller
                 [
                     'name' => 'file',
                     'filename' => 'ContratOdiceService.pdf',
-                    'contents' => file_get_contents('docs/ContratOdiceService.pdf'),
+                    'contents' => file_get_contents('docs/OdiceService_ContratNonSigne.pdf'),
                     'headers' => [
                             'Content-Type' => 'application/pdf'
                     ]
