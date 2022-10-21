@@ -60,7 +60,7 @@ class SubscriptionController extends Controller
     public function store(Request $request){
         $this->downloadSignedDocument($request->signature_request_id);
         $notification = new AdhesionReceived(session('attributes'),$this->chaud,$this->froid,$this->autres);
-        Mail::to("verdier.developpement@gmail.com")->send($notification);
+        Mail::to("jsube@martinon.cc")->send($notification);
         Mail::to("vmogenet@cyn-communication.fr")->send($notification);
         return view('welcome', ["chaud"=>$this->chaud,"froid"=>$this->froid,"autres"=>$this->autres]);
     }
