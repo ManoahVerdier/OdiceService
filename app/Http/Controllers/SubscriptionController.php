@@ -62,7 +62,7 @@ class SubscriptionController extends Controller
         $notification = new AdhesionReceived(session('attributes'),$this->chaud,$this->froid,$this->autres);
         Mail::to("verdier.developpement@gmail.com")->send($notification);
         Mail::to("vmogenet@cyn-communication.fr")->send($notification);
-        return view('welcome');
+        return view('welcome', ["chaud"=>$this->chaud,"froid"=>$this->froid,"autres"=>$this->autres]);
     }
 
     public function createWordFiles(Request $request){
