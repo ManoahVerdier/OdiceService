@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="https://www.odice.info/wp-content/cache/min/1/wp-content/themes/theme-wordpress/css/front.min.css?ver=1659614130">
     @vite([
       'resources/css/app.min.css',
-      'resources/sass/app.scss', 
+      'resources/sass/app.scss',
       'resources/js/app.js'
     ])
   </head>
@@ -61,7 +61,7 @@
     <!-- page-->
     <div class="page" id="page">
       <!-- header-->
-      
+
       @include('header')
       <!-- container-->
       <div class="page__container">
@@ -151,12 +151,12 @@
                 <div class="discover__col">
                   <h4>Réparation sans Odice Service +</h4>
                   <div class="discover__list" style="background-image:url('{{ Vite::asset('resources/img/FrameBlue.png')}}')">
-                    
+
                     <div class="discover__box">
                       Pour une intervention
                       <br>
                       <br>
-                      
+
                         Déplacement et diagnostic : 70€<br>
                         + Main d’oeuvre : 78€<br>
                         + Pièces détachées : 300€ en moyenne<br>
@@ -168,7 +168,7 @@
                 <div class="discover__col">
                   <h4>Réparation avec Odice Service +</h4>
                   <div class="discover__list" style="background-image:url('{{ Vite::asset('resources/img/FrameDarkBlue.png')}}')">
-                    
+
                     <div class="discover__box">
                       <p>Un abonnement tout compris</p>
                       <p>à partir de 79,99€ TTC/mois</p>
@@ -322,7 +322,7 @@
               <div class="pricing__top">
                 <div class="pricing__title h1">3 formules</div>
                 <div class="pricing__info h5M">Adaptées à vos besoins.</div>
-                
+
               </div>
               <div class="pricing__plans">
                 <div class="univers1 pricing__plan">
@@ -331,8 +331,8 @@
                       <div class="pricing__subtitle h3">Silver</div>
                     </div>
                     <div class="pricing__counter">1 univers au choix</div>
-                    <div class="pricing__price h3"><span class="amount">99.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
-                    <div class="pricing__details h6">Soit 99.99€ par mois et par appareil</div>
+                    <div class="pricing__price h3"><span class="amount"><span style="text-decoration:striked">99.99€</span>49.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
+                    <div class="pricing__details h6">Soit <span style="text-decoration:striked">99.99€</span> 49.99€ par mois et par appareil</div>
                   </div>
                   <div class="pricing__body">
                     <div class="pricing__options">
@@ -342,7 +342,7 @@
                         </svg>
                         <div class="pricing__text"><span class="nbApp">0</span> équipements sélectionnés</div>
                       </div>
-                      
+
                     </div><a class="button-gray pricing__button" href="#subscribePart">Je m'abonne</a>
                   </div>
                 </div>
@@ -619,8 +619,8 @@
         </div>
       </div>
       </div>
-      
-        
+
+
 
 
       <footer class="site-footer" role="contentinfo" style="position:inherit !important">
@@ -649,10 +649,10 @@ Web : www.odice.info<br>
 <li class="footer-nav__item  footer-nav__item--21"><a href="https://www.odice.info/mentions-legales/" class="footer-nav__link">Mentions légales</a></li>
 </ul>                </nav>
 
-            
+
         </div>
     </footer>
-      
+
     </div>
     <!-- scripts-->
 
@@ -722,6 +722,6 @@ Web : www.odice.info<br>
 
 
     </div>
-    
+
   </body>
 </html>
