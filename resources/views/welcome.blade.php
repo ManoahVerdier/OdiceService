@@ -315,6 +315,31 @@
           </div>
         </div>
 
+        <style>
+          .soldes{
+font-size:16pt;
+color:#808080
+}
+
+.soldes::after{
+content:"-50%";
+text-decoration:none !important;
+position:absolute;
+right:50%;
+bottom:-25px;
+font-size:10pt;
+color:white;
+background:#EE5B58;
+padding:5px;
+border-radius:10px;
+height:30px;
+line-height:20px;
+}
+
+.amount{
+position:relative;
+}
+        </style>
         <!-- pricing-->
         <div class="section pricing" id="pricing">
           <div class="pricing__inner">
