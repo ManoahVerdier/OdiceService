@@ -317,28 +317,28 @@
 
         <style>
           .soldes{
-font-size:16pt;
-color:#808080
-}
+          font-size:16pt;
+          color:#808080
+          }
 
-.soldes::after{
-content:"-50%";
-text-decoration:none !important;
-position:absolute;
-right:50%;
-bottom:-25px;
-font-size:10pt;
-color:white;
-background:#EE5B58;
-padding:5px;
-border-radius:10px;
-height:30px;
-line-height:20px;
-}
+          .soldes::after{
+          content:"-50%";
+          text-decoration:none !important;
+          position:absolute;
+          right:50%;
+          bottom:-25px;
+          font-size:10pt;
+          color:white;
+          background:#EE5B58;
+          padding:5px;
+          border-radius:10px;
+          height:30px;
+          line-height:20px;
+          }
 
-.amount{
-position:relative;
-}
+          .amount{
+          position:relative;
+          }
         </style>
         <!-- pricing-->
         <div class="section pricing" id="pricing">
@@ -356,8 +356,8 @@ position:relative;
                       <div class="pricing__subtitle h3">Silver</div>
                     </div>
                     <div class="pricing__counter">1 univers au choix</div>
-                    <div class="pricing__price h3"><span class="amount"><span style="text-decoration:line-through" class="soldes">99.99€</span> 49.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
-                    <div class="pricing__details h6">Soit <span style="text-decoration:line-through">99.99€</span> 49.99€ par mois et par appareil</div>
+                    <div class="pricing__price h3"><span class="amount"><span style="text-decoration:line-through" class="soldes">129.99€</span> 64.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
+                    <div class="pricing__details h6">Soit <span style="text-decoration:line-through">129.99€</span> 64.99€ par mois et par appareil</div>
                   </div>
                   <div class="pricing__body">
                     <div class="pricing__options">
