@@ -356,8 +356,8 @@
                       <div class="pricing__subtitle h3">Silver</div>
                     </div>
                     <div class="pricing__counter">1 univers au choix</div>
-                    <div class="pricing__price h3"><span class="amount"><span style="text-decoration:line-through" class="soldes">129.99€</span> 64.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
-                    <div class="pricing__details h6">Soit <span style="text-decoration:line-through">129.99€</span> 64.99€ par mois et par appareil</div>
+                    <div class="pricing__price h3"><span class="amount">129.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
+                    <div class="pricing__details h6">Soit <span>129.99€</span> par mois et par appareil</div>
                   </div>
                   <div class="pricing__body">
                     <div class="pricing__options">
@@ -377,8 +377,8 @@
                       <div class="pricing__subtitle h3">Gold</div>
                     </div>
                     <div class="pricing__counter">2 univers au choix</div>
-                    <div class="pricing__price h3"><span class="amount"><span style="text-decoration:line-through" class="soldes">89.99€</span> 44.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
-                    <div class="pricing__details h6">Soit <span style="text-decoration:line-through">89.99€</span> 44.99€</span> par mois et par appareil</div>
+                    <div class="pricing__price h3"><span class="amount">44.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
+                    <div class="pricing__details h6">Soit <span >89.99€</span></span> par mois et par appareil</div>
                   </div>
                   <div class="pricing__body">
                     <div class="pricing__options">
@@ -398,8 +398,8 @@
                       <div class="pricing__recommended">Recommandé</div>
                     </div>
                     <div class="pricing__counter">3 univers au choix</div>
-                    <div class="pricing__price h3"><span class="amount"><span style="text-decoration:line-through" class="soldes">79.99€</span> 39.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
-                    <div class="pricing__details h6" style="display:none">Soit <span style="text-decoration:line-through"> 79.99€</span>39.99€ par mois et par appareil</div>
+                    <div class="pricing__price h3"><span class="amount">39.99€</span> <span class="pricing__duration"><span class="pricing__separator"></span> mois</span></div>
+                    <div class="pricing__details h6" style="display:none">Soit <span> 79.99€</span>par mois et par appareil</div>
                   </div>
                   <div class="pricing__body">
                     <div class="pricing__options">
