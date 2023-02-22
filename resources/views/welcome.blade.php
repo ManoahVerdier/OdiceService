@@ -431,7 +431,7 @@
             <div class="subscription__wrapper">
               <div class="subscription__head">
                 <div class="subscription__title h1">Je m'abonne à Odice Service +</div>
-                <div class="subscription__info h4M">Pour profiter des avantages, riend de plus simple, vous remplissez ce formulaire et on revient vers vous</div>
+                <div class="subscription__info h4M">Pour profiter des avantages, rien de plus simple, vous remplissez ce formulaire et on revient vers vous</div>
               </div>
               <form class="subscription__form" id="sendAdhesion" method="POST">
                 @csrf
